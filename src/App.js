@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 //import './App.css';
 
-const prop = { number: 0}
-
 class App extends Component {
-  state = {number: 0}
+  state = {number: this.props.number}
 
   Click = () =>{
     //alert("now you know how to handle onclick event");
     this.setState({
       number: this.state.number+1
     })
+
   }
 
   render() {
