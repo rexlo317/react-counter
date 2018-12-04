@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 //import './App.css';
 
 class App extends Component {
@@ -7,11 +6,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p><button>Hello World!</button>number: 0</p>
+          <p><button onClick={Click}>Hello World!</button>number: 0</p>
         </header>
       </div>
     );
   }
 }
 
+function Click(){
+  alert("now you know how to handle onclick event");
+}
 export default App;
